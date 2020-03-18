@@ -1,0 +1,17 @@
+@use './vars' as v;
+
+html{
+  box-sizing: border-box;
+  height: 100%;
+
+  body{
+    font-family: v.$fontFamily;
+    color: v.$white;
+    height: 100%;
+    background: v.$gradient;
+    background-attachment: fixed;
+  }
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}

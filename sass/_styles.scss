@@ -1,0 +1,93 @@
+@use './vars' as v;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .hero {
+    margin-bottom: 40px;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 3px;
+  }
+
+  main {
+    .lista-productos {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      li {
+        text-align: center;
+        width: 50%;
+        padding: 30px;
+
+        p{
+          font-size: 20px;
+          font-weight: bold;
+          margin: 10px 0;
+
+          span{
+            color: v.$yellow;
+            font-size: 25px;
+
+          }
+        }
+
+        .boton{
+          background-color: v.$yellow;
+          display: inline-block;
+          font-size: 25px;
+          padding: 10px 30px;
+          margin-top: 10px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: v.$purple;
+          border-radius: 3px;
+          transition: 0.3s;
+
+          &:hover{
+            transform: scale(1.1);
+            background-color: rgba(255, 196, 0, 0.87);
+          }
+        }
+
+      }
+
+      @media (min-width: 768px) {
+        li {
+          width: 33.3%;
+          
+        }
+      }
+      @media (min-width: 1200px) {
+        li p {
+          font-size: 28px;
+        }
+      }
+      @media (min-width: 1200px) {
+        li p span{
+          font-size: 35px;
+        }
+      }
+
+      img {
+        border: 10px solid rgba(128, 1, 195, 0.45);
+        transition: 0.4s;
+
+        &:hover {
+          border: 10px solid rgba(128, 1, 195, 1);
+        }
+      }
+    }
+  }
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
