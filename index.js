@@ -1,4 +1,4 @@
-let lista = document.querySelector('.lista-productos');
+let list = document.querySelector('.list-products');
 const listOfProd = [
   { title: "VueJS", img: "1" },
   { title: "AngularJS", img: "2" },
@@ -14,11 +14,11 @@ const listOfProd = [
   { title: "Javascript", img: "12" }
 ]
 
-const producto = (idImg, tituloImg) => 
+const product = (idImg, titleloImg) => 
 `<li>
-  <img src="img/${idImg}.jpg" loading="lazy" alt="${tituloImg}">
-  <p>${tituloImg} <span>$25</span></p>
-  <a href="#" class="boton">Comprar</a>
+  <img src="img/${idImg}.jpg" loading="lazy" alt="${titleloImg}">
+  <p>${titleloImg} <span>$25</span></p>
+  <a href="#" class="button">BUY NOW</a>
 </li>`
 
-listOfProd.map((prod) => lista.innerHTML += producto(prod.img, prod.title));
+listOfProd.map((prod) => list.innerHTML += product(prod.img, prod.title));

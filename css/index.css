@@ -19,39 +19,7 @@ header {
   padding: 40px 0;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.container .hero {
-  margin-bottom: 40px;
-}
-.container img {
-  max-width: 100%;
-  border-radius: 3px;
-}
-.container main .lista-productos {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.container main .lista-productos li {
-  text-align: center;
-  width: 50%;
-  padding: 30px;
-}
-.container main .lista-productos li p {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-.container main .lista-productos li p span {
-  color: #ffce00;
-  font-size: 25px;
-}
-.container main .lista-productos li .boton {
+.container main .list-products li .button {
   background-color: #ffce00;
   display: inline-block;
   font-size: 25px;
@@ -63,38 +31,72 @@ header {
   border-radius: 3px;
   transition: 0.4s;
 }
-.container main .lista-productos li .boton:hover {
+
+.container main .list-products li .button:hover {
   transform: scale(1.1);
   background-color: rgba(255, 196, 0, 0.87);
   color: #ffff;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container .hero {
+  margin-bottom: 40px;
+}
+.container img {
+  max-width: 100%;
+  border-radius: 3px;
+}
+.container main h2 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container main .list-products {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.container main .list-products li {
+  text-align: center;
+  width: 50%;
+  padding: 30px;
+}
+.container main .list-products li p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.container main .list-products li p span {
+  color: #ffce00;
+  font-size: 25px;
+}
 @media (min-width: 768px) {
-  .container main .lista-productos li {
+  .container main .list-products li {
     width: 33.3%;
   }
 }
 @media (min-width: 1200px) {
-  .container main .lista-productos li p {
+  .container main .list-products li p {
     font-size: 28px;
   }
 }
 @media (min-width: 1200px) {
-  .container main .lista-productos li p span {
+  .container main .list-products li p span {
     font-size: 35px;
   }
 }
-.container main .lista-productos img {
+.container main .list-products img {
   border: 10px solid rgba(128, 1, 195, 0.45);
   transition: 0.4s;
 }
-.container main .lista-productos img:hover {
+.container main .list-products img:hover {
   border: 10px solid #8001c3;
-  transform: scale(0.95);
-}
-
-h2 {
-  text-align: center;
-  text-transform: uppercase;
+  transform: scale(0.96);
 }
 
 /*# sourceMappingURL=index.css.map */
