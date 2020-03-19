@@ -48,11 +48,12 @@
           text-decoration: none;
           color: v.$purple;
           border-radius: 3px;
-          transition: 0.3s;
+          transition: 0.4s;
 
           &:hover{
             transform: scale(1.1);
             background-color: rgba(255, 196, 0, 0.87);
+            color: v.$white;
           }
         }
 
@@ -75,12 +76,17 @@
         }
       }
 
+      @mixin border-color($degradado) {
+        border: 10px solid rgba(128, 1, 195, $degradado);
+      }
+
       img {
-        border: 10px solid rgba(128, 1, 195, 0.45);
+        @include border-color(0.45);
         transition: 0.4s;
 
         &:hover {
-          border: 10px solid rgba(128, 1, 195, 1);
+          @include border-color(1);
+          transform: scale(0.95);
         }
       }
     }

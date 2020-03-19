@@ -61,11 +61,12 @@ header {
   text-decoration: none;
   color: #8001c3;
   border-radius: 3px;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 .container main .lista-productos li .boton:hover {
   transform: scale(1.1);
   background-color: rgba(255, 196, 0, 0.87);
+  color: #ffff;
 }
 @media (min-width: 768px) {
   .container main .lista-productos li {
@@ -88,6 +89,7 @@ header {
 }
 .container main .lista-productos img:hover {
   border: 10px solid #8001c3;
+  transform: scale(0.95);
 }
 
 h2 {
